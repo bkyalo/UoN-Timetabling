@@ -249,6 +249,239 @@
 		min-width: 20px;
 		text-align: center;
 	}
+
+	/* Mobile Responsive */
+	@media (max-width: 991px) {
+
+		/* Tablet adjustments */
+		.modern-hero .hero-content {
+			flex-direction: column;
+			text-align: center;
+			gap: 20px;
+		}
+
+		.modern-hero .hero-logo {
+			max-width: 80px;
+		}
+
+		.modern-hero .hero-text h1 {
+			font-size: 28px;
+		}
+
+		.modern-hero .hero-text p {
+			font-size: 16px;
+		}
+
+		.footer .col-md-4 {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media (max-width: 767px) {
+
+		/* Mobile phone adjustments */
+		body {
+			padding-top: 65px;
+			font-size: 14px;
+		}
+
+		/* Selection dropdowns - Full width */
+		.col-md-3,
+		.col-md-9 {
+			width: 100% !important;
+			max-width: 100% !important;
+			flex: 0 0 100% !important;
+		}
+
+		.panel-default .panel-heading {
+			font-size: 15px;
+			padding: 10px 12px;
+		}
+
+		.panel-default .panel-heading i {
+			font-size: 16px;
+		}
+
+		.form-control {
+			width: 100% !important;
+			font-size: 13px;
+			padding: 10px;
+		}
+
+		select.form-control {
+			height: 42px;
+		}
+
+		.btn {
+			width: 100%;
+			padding: 12px;
+			font-size: 14px;
+			margin-top: 10px;
+		}
+
+		.form-group label {
+			font-size: 12px;
+			margin-bottom: 6px;
+		}
+
+		.form-group label i {
+			font-size: 13px;
+		}
+
+		/* Navbar */
+		.navbar-inverse {
+			min-height: 65px;
+		}
+
+		/* Academic Year and Semester - Hide on mobile */
+		.text-center h3 {
+			display: none;
+		}
+
+		.text-center h4 {
+			display: none;
+		}
+
+		.navbar-inverse .navbar-brand {
+			font-size: 14px;
+			padding: 22px 10px;
+		}
+
+		.navbar-inverse .navbar-brand i {
+			font-size: 16px;
+		}
+
+		.navbar-inverse .navbar-nav>li>a {
+			padding: 15px 10px;
+			font-size: 13px;
+		}
+
+		/* Hero Section */
+		.modern-hero {
+			padding: 30px 0;
+		}
+
+		.modern-hero .hero-content {
+			flex-direction: column;
+			text-align: center;
+			gap: 15px;
+		}
+
+		.modern-hero .hero-logo {
+			max-width: 70px;
+		}
+
+		.modern-hero .hero-text h1 {
+			font-size: 24px;
+		}
+
+		.modern-hero .hero-text p {
+			font-size: 14px;
+			line-height: 1.5;
+		}
+
+		/* Footer - Better mobile layout */
+		.footer {
+			padding: 30px 0 15px;
+			text-align: center;
+		}
+
+		.footer .row {
+			flex-direction: column;
+		}
+
+		.footer .col-md-4 {
+			margin-bottom: 30px;
+			width: 100%;
+		}
+
+		.footer h5 {
+			font-size: 15px;
+			margin-bottom: 15px;
+		}
+
+		.footer ul {
+			display: inline-block;
+			text-align: left;
+		}
+
+		.footer .col-md-4 {
+			text-align: center;
+		}
+
+		.footer-contact {
+			display: inline-block;
+			text-align: left;
+		}
+
+		.footer ul li {
+			margin-bottom: 12px;
+		}
+
+		.footer ul li a {
+			font-size: 13px;
+		}
+
+		.footer-contact p {
+			font-size: 13px;
+			margin-bottom: 10px;
+		}
+
+		.footer-bottom {
+			margin-top: 20px;
+			padding-top: 15px;
+			font-size: 12px;
+		}
+
+		/* Content adjustments */
+		.panel-body {
+			padding: 15px;
+		}
+
+		.panel-heading h5 {
+			font-size: 16px;
+		}
+
+		/* Sticky sidebar on mobile - make it not sticky */
+		.sticky-sidebar {
+			position: static !important;
+		}
+
+		/* Welcome message - Hide on mobile */
+		#welcomeInstructions {
+			display: none !important;
+		}
+
+		/* PDF Viewer */
+		#pdfViewer {
+			height: 500px !important;
+		}
+
+		/* Hide collapsible timetables table on mobile */
+		#timetableReferencePanel {
+			display: none !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+
+		/* Extra small phones */
+		.modern-hero .hero-text h1 {
+			font-size: 20px;
+		}
+
+		.modern-hero .hero-text p {
+			font-size: 13px;
+		}
+
+		.navbar-inverse .navbar-brand {
+			font-size: 12px;
+		}
+
+		#pdfViewer {
+			height: 400px !important;
+		}
+	}
 </style>
 <link rel="stylesheet" href="css/main.css">
 
@@ -392,7 +625,7 @@
 					</div>
 
 					<!-- Reference Table (Collapsible) -->
-					<div class="panel panel-default" style="margin-top: 20px;">
+					<div id="timetableReferencePanel" class="panel panel-default" style="margin-top: 20px;">
 						<div class="panel-heading" style="cursor: pointer;" data-toggle="collapse"
 							data-target="#referenceTable">
 							<h5 class="panel-title">
