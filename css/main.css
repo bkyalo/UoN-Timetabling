@@ -1,0 +1,90 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.navbar
+{
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+.navbar-inverse
+{
+    background: #004880;
+}
+.navbar-inverse .navbar-brand
+{
+    color: #ffffff;
+}
+.jumbotron
+{
+    margin-bottom: 0;
+    padding: 30px 0 20px 0;
+}
+
+.mid-bar
+{
+    border: 1px #e5e5e5;
+    border-style: solid none solid none;
+    background: #ffffff;
+    padding: 10px 0 10px 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -300px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 300px; /* .push must be the same height as .footer */
+}
+
+.footer
+{
+    background: #004880;
+    padding: 30px 0 30px 0;
+    color: #ffffff;
+}
+
+.row.vertical-divider {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+/* Disable Bootstrap's clearfix to prevent layout issues with Flexbox */
+.row.vertical-divider:before,
+.row.vertical-divider:after {
+    display: none;
+}
+.row.vertical-divider > div[class^="col-"] {
+    border-right: 1px solid #e5e5e5;
+}
+.row.vertical-divider div[class^="col-"]:first-child {
+    border-left: none;
+}
+.row.vertical-divider div[class^="col-"]:last-child {
+    border-right: none;
+}
+
+/* Sticky sidebar class */
+.sticky-sidebar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 70px; /* Account for navbar height + spacing */
+    align-self: flex-start; /* Prevent stretching in flex container */
+}
+
+.footer ul
+{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li a:link, .footer ul li a:visited
+{
+    color: #ffffff;
+}
